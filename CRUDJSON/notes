@@ -1,0 +1,10 @@
+How to read url data?
+http://127.0.0.1:8080/api/update/101
+
+
+req.params.variable 
+
+
+how to read client form data?
+
+req.body
