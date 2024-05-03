@@ -1,6 +1,11 @@
 import mongoose from "mongoose";
 
 let emp_Schema=mongoose.Schema({
+    id:{
+        type:Number,
+        required:true,
+        
+    },
     name:{
         type:String,
         required:true
