@@ -1,0 +1,42 @@
+Server Side configuratin: Node Js,Express, MongoDB 
+
+Modules:  dotenv,express,mongoose,cors 
+
+>npm init -y 
+>npm i morgan
+>npm i chalk
+>npm i dotenv express mongoose cors
+
+DB Schema 
+
+
+Database LOCAL URL: mongodb://localhost:27017/papi
+
+Table/collection: product 
+
+Feilds:   name:String , 
+          price:number, 
+          image:String,
+          qty:number,
+          info:String,
+          created:date 
+
+
+How to read configuration env values?
+dontenv module 
+
+
+What is model?
+model:product 
+table/collection:product 
+
+
+How to validate client endpoint/http entry points?
+HTTP Logger/morgan 
+
+app.use(morgan('tiny'))
+
+
+How to read client/form data?
+Body Parser module
+express.json()
