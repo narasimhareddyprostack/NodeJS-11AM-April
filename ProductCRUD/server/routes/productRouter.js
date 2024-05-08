@@ -17,7 +17,7 @@ router.post("/create", async(req,resp)=>{
         image:req.body.image
     }
     
-    //console.log(newProduct)
+    console.log(newProduct)
     //product is Exists or not ?
     let product=await Product.findOne({name:newProduct.name})
     if(product){
@@ -40,7 +40,16 @@ router.get("/read/",async(req,resp)=>{
     resp.status(200).json(products)
 })
 
+/*
+    URL:http:127.0.0.1:8080/products/663a163727afa4f6fa54e81a
+    Method:GET
+*/
+router.get("/:id",async(req,resp)=>{
+    let productId=req.params.id;
 
+    let product= await Product.findById(productId);
+    resp.status(200).json(product)
+})
 
 /*
     URL: http://127.0.0.1:8080/products/update/663a163727afa4f6fa54e81a

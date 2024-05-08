@@ -14,6 +14,9 @@ app.use(express.json())
 //enable clent entry points/middleware
 app.use(morgan('tiny'))
 
+//enable cors
+app.use(cors())
+
 dotenv.config({'path':'./config/config.env'})
 
 let port = process.env.PORT 

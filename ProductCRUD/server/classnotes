@@ -51,3 +51,33 @@ model.save()
 
 
 API:
+
+
+Product CRUD
+
+/*
+    URL: http://127.0.0.1:8080/products/create
+    Method Type:POST
+    Required Fields: name,price,qty,info,image
+*/
+
+/*
+URL: http://127.0.0.1:8080/products/read
+Method:GET
+Required Fields:No
+
+*/
+
+
+/*
+    URL: http://127.0.0.1:8080/products/update/663a163727afa4f6fa54e81a
+    Method :PUT
+    required Field:name,price,info,image,qty
+*/
+
+/*
+    url:http://127.0.0.1:8080/products/663a163727afa4f6fa54e81f
+    url:http://127.0.0.1:8080/products/delete/663a163727afa4f6fa54e81f
+    Method:Delete
+    required Fields:None
+*/
