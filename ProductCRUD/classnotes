@@ -40,3 +40,14 @@ app.use(morgan('tiny'))
 How to read client/form data?
 Body Parser module
 express.json()
+
+
+Model.find()
+Model.findById(id)
+Model.findByIdAndUpdate(id,{data},{})
+Model.findByIdAndDelete(id)
+
+model.save()
+
+
+API:
